@@ -14,6 +14,10 @@ public class HttpUrlConnectionEjemplo {
 		System.setProperty("http.proxyPort", "8080");
 		System.out.println("Testing 1 - Send Http GET request");
 		http.sendGet();
+		
+		//segun Willem eso puede funcionar tmb :
+		//  Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("ptx.proxy.corp.sopra", 8080));
+        	//  HttpURLConnection connection = (HttpURLConnection) serverAddress.openConnection(proxy);
 	}
 	
 	private void sendGet() throws Exception {
