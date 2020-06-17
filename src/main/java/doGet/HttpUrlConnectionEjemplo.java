@@ -10,8 +10,8 @@ public class HttpUrlConnectionEjemplo {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		HttpUrlConnectionEjemplo http = new HttpUrlConnectionEjemplo();
-		System.setProperty("http.proxyHost", "alca.proxy.corp.sopra");
-		System.setProperty("http.proxyPort", "8080");
+//		System.setProperty("http.proxyHost", "alca.proxy.corp.sopra");
+//		System.setProperty("http.proxyPort", "8080");
 		System.out.println("Testing 1 - Send Http GET request");
 		http.sendGet();
 		
@@ -22,7 +22,8 @@ public class HttpUrlConnectionEjemplo {
 	
 	private void sendGet() throws Exception {
 
-		String url = "http://www.google.com/search?q=willem";
+//		String url = "http://www.google.com/search?q=willem";
+		String url = "http://localhost:8080/mywebsite/";
 		
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
